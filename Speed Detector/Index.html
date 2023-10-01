@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Detector</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <h1>Speed Detector</h1>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12 col-md-6 offset-md-3">
+                <div class="form-group">
+                    <label for="speedInput1">SPEED:</label>
+                    <input id="speedInput1" class="form-control" type="number" name="" placeholder="Speed">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12 text-center">
+                <button class="btn btn-primary" onclick="checkSpeed()">CHECK</button>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 col-md-6 offset-md-3">
+                <table class="table">
+                    <tr>
+                        <td>SPEED LIMIT:</td>
+                        <td>70</td>
+                    </tr>
+                    <tr>
+                        <td>Driver's Speed:</td>
+                        <td id="velocity"></td>
+                    </tr>
+                    <tr>
+                        <td>Points Counter:</td>
+                        <td id="Points"></td>
+                    </tr>
+                    <tr>
+                        <td>Status:</td>
+                        <td id="Remarks"></td>
+                    </tr>
+                    <tr>
+                        <td>Speed limit:</td>
+                        <td id="speedCheck"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./Index.js"></script>
+</body>
+</html>
